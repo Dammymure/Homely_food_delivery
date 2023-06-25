@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+    </style>
+
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#"><img src="/assets/Mask group.png" alt=""></a>
+
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <button class="nav-btn">Cart<span class="count" id="count-el"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-message">
+            <div class="message">
+                <h1 class="intro-heading">Enjoy <span class="clr-org"> home made meals</span> far away from home</h1>
+                <p class="intro-para">Helping you enjoy confortable and health food anywhere and anytime on the go</p>
+
+                <button class="btn-order">Order now</button>
+            </div>
+
+            <div class="intro-pic">
+                <img src="/assets/pounded-yam-and-egusi 1.png" alt="" class="first-img">
+            </div>
+        </section>
+
+        <section class="option">
+            <div class="option-number">
+                <ul class="option-list">
+                    <li><h1 class="opt-header">500+</h1><p class="light-font">Food partners</p></li>
+                    <li><h1 class="opt-header">1k+</h1><p class="light-font">Orders delivered</p></li>
+                    <li><h1 class="opt-header">12k+</h1><p class="light-font">Clients</p></li>
+                </ul>
+            </div>
+
+            <div class="choose">
+                <h1 class="choose-fs">Why choose us</h1>
+                <p class="choose-para-fs">This is what makes our product different</p>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <div class="product-list">
+                <div class="product-item">
+                    <img class="icon-3" src="/assets/Group.png" alt="">
+                    <h1 class="item-h1">Easy to order</h1>
+                    <p class="item-1p">Order food at a single click and select all food to order at any poin in time and at ease and comfort</p>
+                </div>
+                <div class="product-item middle-product">
+                    <img src="/assets/delivery-man 1.png" alt="">
+                    <h1 class="item-h2">fast delivery</h1>
+                    <p class="item-2p">Order food at a single click and select all food to order at any poin in time and at ease and comfort</p>
+                </div>
+                <div class="product-item">
+                    <img src="/assets/top-food-logo-icon-design-vector-22767226 2.png" alt="">
+                    <h1 class="item-h3">100% quality</h1>
+                    <p class="item-3p">Order food at a single click and select all food to order at any poin in time and at ease and comfort</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="menu-intro">
+                    <h1 class="menu-h1">Our daily dishes</h1>
+                    <p class="menu-para">Check out recomended dishes of your choice</p>
+                </div>
+            </div>
+
+            <div class="grid-dishes">
+
+                <div class="btn-view">
+                <button class="view-all btn-org">View all</button>
+                </div>
+
+                <div class="dishes">
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Yam and egg sauce</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Spag and pepper sauce</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Porridge beans</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Yam and egg sauce</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Spag and pepper sauce</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                    <div class="menu-items">
+                        <img src="/assets/Rectangle 16.png" alt="">
+                        <p>Porridge beans</p>
+                        <div class="price"><p>N500</p>
+                        <button id="add-item" onclick="addButton()">+ Add</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid-container">
+                <div class="about-grid">
+                    <h1>About Us</h1>
+                    <p class="p-opacity">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ab id veniam laborum quisquam molestiae asperiores iusto, culpa unde cumque at beatae eveniet, magni nostrum laudantium totam amet voluptatum vero consectetur reiciendis nemo eum quidem voluptatem voluptas? Labore, non natus.</p>
+                    <button class="view-all">See more</button>
+                </div>
+
+                <div class="about-food-grid shift-right" >
+                    <img class="about-img" src="/assets/aboutt.png" alt="">
+                </div>
+
+                <div class="get-mobile">
+                    <h1 style="color:#FF4D00">Get our mobile app</h1>
+                    <p>Enjoy better experience</p>
+                </div>
+                <div class="">
+
+                </div>
+
+                <div class="lorem">
+                    <p class="p-opacity">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repudiandae cupiditate molestias doloremque assumenda minima eos sequi. Delectus voluptates, facilis, animi excepturi omnis aut atque unde, deserunt architecto qui rem ex facere earum repudiandae distinctio cupiditate a. Dolor, ab corrupti.</p>
+                    
+                    <div class="playstore" style="padding-top: 40px;">
+                    <img src="/assets/image 1.png" alt="" width="220px" style="position: relative;top: 9px;">
+                    <img src="/assets/image 2.png" alt="" width="220px" height="66px">
+                    </div>
+
+                </div>
+
+                <div class="phone-pic shift-right">
+                    <img class="about-img" src="/assets/Group 70.png" alt="" >
+                </div>
+
+            </div>
+        </section>
+
+        <div class="testimonial">
+            <h1 style="color:#FF4D00">Testimonials</h1>
+            <p>This is what our client are saying</p>
+        </div>
+
+        <div class="container-testi">
+            <ul class="testi-list">
+                <li>
+                    <h2>Paul james</h2>
+                    <p class="testi-gap" style="font-weight: bolder; color:black; opacity: 1; font-size: small;">Lagos</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ex similique ipsa soluta id? Laboriosam facilis accusantium aliquam aspernatur quo!</p>
+                </li>
+                <li>
+                    <h2>Mercy jude</h2>
+                    <p class="testi-gap" style="font-weight: bolder; color:black; opacity: 1; font-size: small;"> Kogi state</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur sed pariatur impedit minima voluptate placeat reprehenderit explicabo deserunt possimus?</p>
+                </li>
+                <li>
+                    <h2>Lara One</h2>
+                    <p class="testi-gap" style="font-weight: bolder; color:black; opacity: 1; font-size: small;"> Lagos state</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum veniam accusantium vitae quod quis odio dicta laboriosam delectus omnis nesciunt?</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="newsletter">
+            <h1 style="font-size: 25px;">Subscribe to our Newsletter</h1>
+            <p style="padding-top: 10px; padding-bottom: 25px; opacity: 0.7; font-size: small;">Enter your Email address to get daily offers and news</p>
+            <form action="">
+                <label for="email"></label>
+                <input type="email" name="email" class="input-email" placeholder="    Enter your email" style="width: 350px; height: 40px" >
+                <input type="submit" value="subscribe" class="btn-sub">
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                <div>
+                    <ul>
+                        <li><a href="#"><img src="/assets/Mask group.png" alt=""></a>
+                        </li>
+                        <li><p style="font-weight: lighter;">Solution for easy and flexible house hunting.You can trust us anywhere through this platform</p></li>
+                        <li>@2022</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="line-height: 30px;">
+                        <li style="font-size: 25px; padding-bottom: 0px;">About</li>
+                        <li>
+                            <ul style="width:20ch; opacity: 0.7;">
+                                <li>Our Contact</li>
+                                <li>Career</li>
+                                <li>Investores</li>
+                                <li>Social Impact</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul style="line-height: 50px ; text-align: center; position: relative; top: 20px;">
+                        <li>
+                            <h1>Social</h1>
+                        </li>
+                        <li><img src="/assets/Vector.png" alt=""></li>
+                        <li><img src="/assets/Vector (1).png" alt=""></li>
+                        <li><img src="/assets/Vector (2).png" alt=""></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>
